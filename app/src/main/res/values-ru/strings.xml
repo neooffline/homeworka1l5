@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Практическое Задание Android 1 урок 4</string>
+    <string name="weather_label">Город</string>
+    <string name="weather_value">Нет</string>
+    <string name="back_to_main_button">Назад</string>
+    <string name="check_temp">Температура</string>
+    <string name="check_hum">Влажность</string>
+    <string name="check_pres">Давление</string>
+    <string name="temp_dim">\u00B0C</string>
+    <string name="hum_dim">%</string>
+    <string name="press_dim">атм</string>
+    <string name="button_label">замерить</string>
+    <string name="query_data">Запрос</string>
+    <string-array name="cities">
+        <item>Москва</item>
+        <item>Мурманск</item>
+        <item>Нью-йорк</item>
+        <item>Йошкорола</item>
+    </string-array>
+</resources>

@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">homewoka1l5</string>
+    <string name="app_name">Homework Android 1 Lesson 4</string>
+    <string name="weather_label">City</string>
+    <string name="weather_value">None</string>
+    <string name="back_to_main_button">Back</string>
+    <string name="check_temp">Temperature</string>
+    <string name="check_hum">Humidity</string>
+    <string name="check_pres">Pressure</string>
+    <string name="temp_dim">\u00B0C</string>
+    <string name="hum_dim">%</string>
+    <string name="press_dim">atm</string>
+    <string name="button_label">measure</string>
+    <string name="query_data">Query</string>
+    <string-array name="cities">
+        <item>Moscow</item>
+        <item>Murmansk</item>
+        <item>New-York</item>
+        <item>Yoshkar-Ola</item>
+    </string-array>
 </resources>

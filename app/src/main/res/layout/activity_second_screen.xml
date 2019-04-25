@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back_to_main_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goBack"
+            android:text="@string/back_to_main_button"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/temp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_temp"
+            android:textSize="16sp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/hum_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_hum"
+            android:textSize="16sp"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/press_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_pres"
+            android:textSize="16sp"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/ss_temp_value"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/ss_hum_value"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/ss_press_value"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/temp_dim"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_dim"
+            android:textSize="16sp"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/hum_dim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hum_dim"
+            android:textSize="16sp"
+            app:layout_column="4"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/press_dim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/press_dim"
+            android:textSize="16sp"
+            app:layout_column="4"
+            app:layout_row="3" />
+    </android.support.v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>
