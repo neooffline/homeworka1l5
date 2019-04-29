@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean[] booleans;
     private CheckBox[] allCheckBoxies;
     static final int CHECKBOX_NUMBER = 3;
+    static final String KEY = "CurrentCity";
     static final String TOKEN = "weatherObj";
     static final String PREF_SAVE = "SAVED_WEATHER";
     static final String PREF_SAVE_B = "PREF_SAVE_B";
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putParcelable("weather", weather);
+        outState.putParcelable(KEY, weather);
         for (int i = 0; i < allCheckBoxies.length; i++) {
             outState.putBoolean(IS_CHECKED_PARAM + i, allCheckBoxies[i].isChecked());
         }
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        weather = savedInstanceState.getParcelable("weather");
+        weather = savedInstanceState.getParcelable(KEY);
         for (int i = 0; i < allCheckBoxies.length; i++) {
             allCheckBoxies[i].setChecked(savedInstanceState.getBoolean(IS_CHECKED_PARAM + i));
         }

@@ -9,7 +9,8 @@ public class Weather implements ChangeValue, Parcelable {
     private int temperature;
     private int humidity;
     private int pressure;
-    static private final int PARAMETERS = 3;
+    private int cityIndex;
+    static private final int PARAMETERS = 4;
     private int[] allValues = new int[PARAMETERS];
 
     public int getTemperature() {
@@ -28,6 +29,7 @@ public class Weather implements ChangeValue, Parcelable {
         allValues[0] = temperature;
         allValues[1] = humidity;
         allValues[2] = pressure;
+        allValues[4] = cityIndex;
         return allValues;
     }
 
@@ -35,6 +37,7 @@ public class Weather implements ChangeValue, Parcelable {
 
     Weather(boolean isFull) {
         if (isFull) {
+            cityIndex = 0;
             changeAll();
         } else {
             fullWeather = "Нет данных по погоде";
@@ -45,6 +48,7 @@ public class Weather implements ChangeValue, Parcelable {
         this.temperature = in.readInt();
         this.humidity = in.readInt();
         this.pressure = in.readInt();
+        this.cityIndex = in.readInt();
         this.fullWeather = in.readString();
         this.allValues = in.createIntArray();
     }
@@ -115,6 +119,7 @@ public class Weather implements ChangeValue, Parcelable {
         dest.writeInt(this.temperature);
         dest.writeInt(this.humidity);
         dest.writeInt(this.pressure);
+        dest.writeInt(this.cityIndex);
         dest.writeString(this.fullWeather);
         dest.writeIntArray(this.allValues);
     }
